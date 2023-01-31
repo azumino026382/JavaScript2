@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+ <meta charset="utf-8">
+ <link rel="stylesheet" href="main.css">
+ <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+
+ <title>電卓</title>
+ </head>
+ 
+ <body>
+ 
+ <table>
+  <tr align="right">
+    <th colspan="4" id="result">0</th>
+  </tr>
+
+  <tr align="center">
+    <td><button onclick="calculate(this)">7</button></td>
+    <td><button onclick="calculate(this)">8</button></td>
+    <td><button onclick="calculate(this)">9</td>
+    <td><button class="buttonOperator" onclick="calculate(this)">+</td>
+  </tr>
+ 
+  <tr align="center">
+    <td><button onclick="calculate(this)">4</td>
+    <td><button onclick="calculate(this)">5</td>
+    <td><button onclick="calculate(this)">6</td>
+    <td><button class="buttonOperator" onclick="calculate(this)">-</td>
+  </tr>
+ 
+  <tr align="center">
+    <td><button onclick="calculate(this)">1</td>
+    <td><button onclick="calculate(this)">2</td>
+    <td><button onclick="calculate(this)">3</td>
+    <td><button class="buttonOperator" onclick="calculate(this)">*</td>
+  </tr>
+ 
+  <tr align="center">
+    <td><button onclick="calculate(this)">0</td>
+    <td><button onclick="calculate(this)">00</td>
+    <td><button onclick="calculate(this)">.</td>
+    <td><button class="buttonOperator" onclick="calculate(this)">/</td>
+  </tr>
+ 
+  <tr align="center">
+    <td colspan="2"><button onclick="calculate(this)">AC</td>
+    <td colspan="2"><button onclick="calculate(this)">=</td>
+  </tr>
+</table>
+
+ <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+ <script type="text/javascript" src="main.js" charset="utf-8"></script>
+ </body>
+ </html>
+ 
