@@ -12,6 +12,13 @@ function calculate(target) {
             result.innerHTML += targetValue;
     } else if (targetValue == "=") {
         result.innerHTML = eval(result.innerHTML);
+    } else if (targetValue == ".") {
+        if (result.innerHTML.slice(-1) == ".") {
+            let decimal point = result.innerHTML.slice(0, -1);
+            result.innerHTML = decimal point + targetValue;
+        } else {    
+            result.innerHTML += targetValue;
+        }
     } else if (targetValue == "+") {
         if (result.innerHTML.slice(-1) == "+") {
             let slice = result.innerHTML.slice(0, -1);
